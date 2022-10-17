@@ -15,15 +15,14 @@ boxMenuEl.insertAdjacentHTML('afterbegin', `<button class="my_btn">Create Pitch<
 const buttonEl = document.querySelector('.my_btn');
 
 buttonEl.addEventListener('click', function() {
-    //Aggiungi un'istruzione per cui la griglia si resetti
-
     //Seleziono 'select'
     const selectEl = document.getElementById('lvl');
     //Acquisisco la difficoltà del livello
     const sizeLvl = Number(selectEl.options[selectEl.selectedIndex].value);
-    //console.log(sizeLvl);
-
+    //Seleziono la griglia
     const gridEL = document.querySelector('.grid');
+    //Aggiungi un'istruzione per cui la griglia si resetti
+    gridEL.innerHTML = ''; 
 
     for (let i = sizeLvl; i > 0; i--) {
         //Inserisco il markup di ogni box nel DOM
@@ -34,14 +33,12 @@ buttonEl.addEventListener('click', function() {
         //console.log(num);
 
         boxEl.addEventListener('click', function() {
+
             boxEl.style.backgroundColor = "lightblue";
+
             console.log(num);
         })
 
     }
 
-    // boxEl.addEventListener('click', function() {
-    //     const numBox = Number(document.boxEl.value);
-    //     console.log(numBox);
-    // });
 });

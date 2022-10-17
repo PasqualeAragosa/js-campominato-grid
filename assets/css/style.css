@@ -34,6 +34,15 @@ select {
     width: calc( 100% / 10);
     /* Da cambiare '10' in modo da dividere la griglia in base alla scelta fatta */
 }
+
+/* .bg_primary {
+    background-color: lightblue;
+}
+
+.bg_light {
+    background-color: white;
+} */
+
 /* #endregion Main */
 
 /* #region Footer */
