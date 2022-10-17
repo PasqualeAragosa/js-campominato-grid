@@ -31,10 +31,11 @@ buttonEl.addEventListener('click', function() {
 
         const boxEl = document.querySelector('.box');
         const num = Number(boxEl.textContent);
-        console.log(num);
+        //console.log(num);
 
         boxEl.addEventListener('click', function() {
-            boxEl.style.backgroundColor = "red";
+            boxEl.style.backgroundColor = "lightblue";
+            console.log(num);
         })
 
     }
