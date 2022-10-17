@@ -29,13 +29,11 @@ buttonEl.addEventListener('click', function() {
         gridEL.insertAdjacentHTML('afterbegin', `<div class="box">${i}</div>`);
 
         const boxEl = document.querySelector('.box');
+        boxEl.style.width = `calc(100% / ${Math.sqrt(sizeLvl)})`;
         const num = Number(boxEl.textContent);
-        //console.log(num);
 
         boxEl.addEventListener('click', function() {
-
             boxEl.style.backgroundColor = "lightblue";
-
             console.log(num);
         })
 
