@@ -23,20 +23,17 @@ select {
 }
 /* #endregion Common */
 
-/* #region Debug */
-
-/* #endregion Debug */
-
-/* #region Utilities */
-
-/* #endregion Utilities */
-
 /* #region Header */
 
 /* #endregion Header */
 
 /* #region Main */
-
+.box {
+    padding: 0.5rem;
+    border: 1px solid black;
+    width: calc( 100% / 10);
+    /* Da cambiare '10' in modo da dividere la griglia in base alla scelta fatta */
+}
 /* #endregion Main */
 
 /* #region Footer */
