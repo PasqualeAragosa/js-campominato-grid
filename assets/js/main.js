@@ -8,9 +8,9 @@
 */
 
 //Seleziono il box nel DOM
-const boxEl = document.querySelector('.box_menu');
+const boxMenuEl = document.querySelector('.box_menu');
 //Inserisco il pulsante per generare un campo
-boxEl.insertAdjacentHTML('afterbegin', `<button class="my_btn">Create Pitch</button>`)
+boxMenuEl.insertAdjacentHTML('afterbegin', `<button class="my_btn">Create Pitch</button>`)
 //Seleziono il bottone
 const buttonEl = document.querySelector('.my_btn');
 
@@ -26,7 +26,21 @@ buttonEl.addEventListener('click', function() {
     const gridEL = document.querySelector('.grid');
 
     for (let i = sizeLvl; i > 0; i--) {
+        //Inserisco il markup di ogni box nel DOM
         gridEL.insertAdjacentHTML('afterbegin', `<div class="box">${i}</div>`);
-        
+
+        const boxEl = document.querySelector('.box');
+        const num = Number(boxEl.textContent);
+        console.log(num);
+
+        boxEl.addEventListener('click', function() {
+            boxEl.style.backgroundColor = "red";
+        })
+
     }
+
+    // boxEl.addEventListener('click', function() {
+    //     const numBox = Number(document.boxEl.value);
+    //     console.log(numBox);
+    // });
 });
