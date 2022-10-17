@@ -35,8 +35,6 @@ buttonEl.addEventListener('click', function() {
                 boxEl.style.backgroundColor = "lightblue";
             }
             console.log(num);
-        })
-
+        });
     }
-
 });
