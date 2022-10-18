@@ -6,7 +6,10 @@
 }
 
 body {
-    background-color: coral;
+    background-color: #90A1C8;
+    color: #8A4A64;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
 }
 
 img {
@@ -31,9 +34,14 @@ select {
 .box {
     height: 80px;
     border: 1px solid black;
+    border-radius: 1rem;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.lightblue {
+    background-color: #add8e6;
 }
 /* #endregion Main */
