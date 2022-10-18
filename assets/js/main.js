@@ -29,11 +29,6 @@ buttonEl.addEventListener('click', function() {
         const num = Number(boxEl.textContent);
 
         boxEl.addEventListener('click', function() {
-            // if (boxEl.style.backgroundColor === "lightblue") {
-            //     boxEl.style.backgroundColor = "white";
-            // } else {
-            //     boxEl.style.backgroundColor = "lightblue";
-            // }
             boxEl.classList.toggle('lightblue');
             console.log(num);
         });
